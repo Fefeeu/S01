@@ -1,0 +1,29 @@
+Dim a As Integer
+Dim b As Integer
+Dim c As Integer
+Dim d As Integer
+
+INPUT a
+INPUT b 
+INPUT c
+
+d = b*b - 4*a*c
+
+Dim x1 As Integer
+Dim x2 As Integer
+
+IF d > 0 THEN
+    x1 = (-b + SQR(d)) / (2 * a)
+    x2 = (-b - SQR(d)) / (2 * a)
+    PRINT "As raízes da equação são:"
+    PRINT "X1 = "; x1
+    PRINT "X2 = "; x2
+
+ELSEIF d = 0 THEN
+    x1 = -b / (2 * a)
+    PRINT "A raiz da equação é:"
+    PRINT "X = "; x1
+
+ELSEIF d < 0 THEN
+    PRINT "A equação não tem raízes reais."
+END IF
